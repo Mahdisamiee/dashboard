@@ -1,7 +1,15 @@
 import React from "react";
+import { Box } from "@mui/material";
+import Header  from "../../components/Header/Header.jsx";
 
 function Dashboard() {
-  return "HELLO EVERYONE";
+  return (
+    <Box m="20px">
+      <Box display="flex" justifyContent="space-between" alignItems="center">
+        <Header title="Dashboard" subtitle="welcome to cvo dashboard" />
+      </Box>
+    </Box>
+  );
 }
 
 export default Dashboard;

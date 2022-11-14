@@ -1,10 +1,13 @@
-import { useColorMode, ColorModeContext } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ProSidebarProvider } from "react-pro-sidebar";
-import TopBar from "./components/global/TopBar/TopBar";
 import { Route, Routes } from "react-router-dom";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import { useColorMode, ColorModeContext } from "./theme";
+import TopBar from "./components/global/TopBar/TopBar";
 import SideBar from "./components/global/SideBar/SideBar";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Team from "./pages/Team/Team";
+import Contacts from "./pages/Contacts/Contacts";
+import Invoices from "./pages/Invoices/Invoices";
 
 function App() {
   const [theme, colorMode] = useColorMode();
@@ -19,6 +22,9 @@ function App() {
               <TopBar />
               <Routes>
                 <Route path="/" element={<Dashboard />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/invoice" element={<Invoices />} />
               </Routes>
             </main>
           </div>
