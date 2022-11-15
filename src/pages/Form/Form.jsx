@@ -1,4 +1,4 @@
-import { Box, useTheme, TextField } from "@mui/material";
+import { Box, useTheme, TextField, Button } from "@mui/material";
 import { Formik } from "formik";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -125,7 +125,11 @@ function Form() {
                 helperText={touched.address2 && errors.address2}
                 sx={{ gridColumn: "span 4" }}
               />
-              
+            </Box>
+            <Box display="flex" justifyContent="end" mt="20px">
+              <Button color="secondary" type="submit" variant="contained">
+                Create new user
+              </Button>
             </Box>
           </form>
         )}
