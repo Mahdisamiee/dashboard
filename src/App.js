@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Team from "./pages/Team/Team";
 import Contacts from "./pages/Contacts/Contacts";
 import Invoices from "./pages/Invoices/Invoices";
+import Form from "./pages/Form/Form";
 
 function App() {
   const [theme, colorMode] = useColorMode();
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/team" element={<Team />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoice" element={<Invoices />} />
+                <Route path="/form" element={<Form />} />
               </Routes>
             </main>
           </div>
