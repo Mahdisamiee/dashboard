@@ -9,6 +9,7 @@ import Team from "./pages/Team/Team";
 import Contacts from "./pages/Contacts/Contacts";
 import Invoices from "./pages/Invoices/Invoices";
 import Form from "./pages/Form/Form";
+import Calender from "./pages/Calender/Calender";
 
 function App() {
   const [theme, colorMode] = useColorMode();
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoice" element={<Invoices />} />
                 <Route path="/form" element={<Form />} />
+                <Route path="/calendar" element={<Calender />} />
               </Routes>
             </main>
           </div>

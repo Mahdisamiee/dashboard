@@ -31,7 +31,7 @@ function Form() {
     console.log(values);
   };
   return (
-    <Box m="20px">
+    <Box m="20px" overflow="auto">
       <Header title="Create User" subtitle="Create a New User" />
 
       <Formik
