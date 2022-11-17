@@ -1,17 +1,17 @@
 import { Box, useTheme } from "@mui/material";
-import PieChart from "../../components/PieChart/PieChart";
+import LineChart from "../../components/LineChart/LineChart";
 import Header from "../../components/Header/Header";
 // import { tokens } from "../../theme";
 
-function Geo() {
+function Line() {
   return (
     <Box m="20px">
-      <Header title="Pie Chart" subtitle="Simple Geo Chart" />
+      <Header title="Line Chart" subtitle="Simple Line Chart" />
       <Box height="75vh">
-        <PieChart />
+        <LineChart />
       </Box>
     </Box>
   );
 }
 
-export default Geo;
+export default Line;

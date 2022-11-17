@@ -13,6 +13,8 @@ import Calender from "./pages/Calender/Calender";
 import Faq from "./pages/Faq/Faq";
 import Bar from "./pages/Bar/Bar";
 import Pie from "./pages/Pie/Pie";
+import Line from "./pages/Line/Line";
+import Geo from "./pages/Geo/Geo";
 
 function App() {
   const [theme, colorMode] = useColorMode();
@@ -35,6 +37,8 @@ function App() {
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/bar" element={<Bar />} />
                 <Route path="/pie" element={<Pie />} />
+                <Route path="/line" element={<Line />} />
+                <Route path="/geography" element={<Geo />} />
               </Routes>
             </main>
           </div>
