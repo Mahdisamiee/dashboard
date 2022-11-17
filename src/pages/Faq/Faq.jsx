@@ -49,17 +49,7 @@ export default function SimpleAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion disabled>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3a-content"
-          id="panel3a-header"
-        >
-          <Typography color={colors.greenAccent[500]} variant="h5">
-            Disabled Accordion
-          </Typography>
-        </AccordionSummary>
-      </Accordion>
+      
     </Box>
   );
 }

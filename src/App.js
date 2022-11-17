@@ -11,6 +11,7 @@ import Invoices from "./pages/Invoices/Invoices";
 import Form from "./pages/Form/Form";
 import Calender from "./pages/Calender/Calender";
 import Faq from "./pages/Faq/Faq";
+import Bar from "./pages/Bar/Bar";
 
 function App() {
   const [theme, colorMode] = useColorMode();
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/form" element={<Form />} />
                 <Route path="/calendar" element={<Calender />} />
                 <Route path="/faq" element={<Faq />} />
+                <Route path="/bar" element={<Bar />} />
               </Routes>
             </main>
           </div>
